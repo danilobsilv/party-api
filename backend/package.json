@@ -1,0 +1,21 @@
+{
+  "name": "party-controller",
+  "version": "1.0.0",
+  "description": "this repo contains the code for a party controller, where you can create, edit and delete your parties the way you want",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
