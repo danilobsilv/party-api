@@ -1,0 +1,9 @@
+POST http://localhost:3333/api/services
+Content-Type: application/json
+
+{
+      "name": "any service",
+      "description": "any description",
+      "price": 1000,
+      "image": "https://media.istockphoto.com/id/501387734/photo/dancing-friends.jpg?s=612x612&w=0&k=20&c=SoTKXXMiJYnc4luzJz3gIdfup3MI8ZlROFNXRBruc10="
+}
