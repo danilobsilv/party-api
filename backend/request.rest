@@ -8,12 +8,12 @@ Content-Type: application/json
       "image": "https://media.istockphoto.com/id/501387734/photo/dancing-friends.jpg?s=612x612&w=0&k=20&c=SoTKXXMiJYnc4luzJz3gIdfup3MI8ZlROFNXRBruc10="
 }
 
-###
 
+###
 GET http://localhost:3333/api/services
 
-###
 
+###
 GET http://localhost:3333/api/services/6473dd0c1d3a3e086cad262d
 
 
@@ -30,4 +30,25 @@ Content-Type: application/json
       "description": "any description",
       "price": 1500,
       "image": "https://media.istockphoto.com/id/501387734/photo/dancing-friends.jpg?s=612x612&w=0&k=20&c=SoTKXXMiJYnc4luzJz3gIdfup3MI8ZlROFNXRBruc10="
+}
+
+
+###
+POST http://localhost:3333/api/parties
+Content-Type: application/json
+
+{
+      "title": "My own party 2",
+      "author": "my own self",
+      "description": "a party that I made to me by me",
+      "budget": 3000,
+      "image": "image.com",
+      "services": [
+            {
+                  "name": "any service",
+                  "description": "any description",
+                  "price": 1700,
+                  "image": "https://media.istockphoto.com/id/501387734/photo/dancing-friends.jpg?s=612x612&w=0&k=20&c=SoTKXXMiJYnc4luzJz3gIdfup3MI8ZlROFNXRBruc10=" 
+            }
+      ]
 }
