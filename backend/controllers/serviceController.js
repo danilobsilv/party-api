@@ -61,9 +61,9 @@ const serviceController = {
                         return;
                   }
 
-                  const deleteService = await ServiceModel.findByIdAndDelete(id);
+                  const deletedService = await ServiceModel.findByIdAndDelete(id);  
 
-                  res.status(200).send({msg: "Service successfully deleted."});
+                  res.status(200).send(deletedService, {msg: "Service successfully deleted."});
 
             } catch (error) {
                   console.log(`Error: ${error}`);
